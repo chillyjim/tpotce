@@ -5,27 +5,27 @@ variable "admin_ip" {
 
 variable "ec2_vpc_id" {
   description = "ID of AWS VPC"
-  default     = "vpc-XXX"
+  default     = "vpc-0e9118f733e9e2527"
 }
 
 variable "ec2_subnet_id" {
   description = "ID of AWS VPC subnet"
-  default     = "subnet-YYY"
+  default     = "subnet-036958ade86172086"
 }
 
 variable "ec2_region" {
   description = "AWS region to launch servers"
-  default     = "eu-west-1"
+  default     = "eu-east-1"
 }
 
 variable "ec2_ssh_key_name" {
-  default = "default"
+  default = "JimsKey"
 }
 
 # https://aws.amazon.com/ec2/instance-types/
 # t3.large = 2 vCPU, 8 GiB RAM
 variable "ec2_instance_type" {
-  default = "t3.large"
+  default = "t3.micro"
 }
 
 # Refer to https://wiki.debian.org/Cloud/AmazonEC2Image/Buster
